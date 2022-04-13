@@ -1,0 +1,71 @@
+{
+  "hash": "534108ee",
+  "browserHash": "73790cbe",
+  "optimized": {
+    "vue-router": {
+      "src": "../../node_modules/vue-router/dist/vue-router.esm-bundler.js",
+      "file": "vue-router.js",
+      "fileHash": "de198b29",
+      "needsInterop": false
+    },
+    "vue": {
+      "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "8bdf35e8",
+      "needsInterop": false
+    },
+    "element-plus": {
+      "src": "../../node_modules/element-plus/es/index.mjs",
+      "file": "element-plus.js",
+      "fileHash": "59dee60c",
+      "needsInterop": false
+    },
+    "pinia": {
+      "src": "../../node_modules/pinia/dist/pinia.esm-browser.js",
+      "file": "pinia.js",
+      "fileHash": "458fc9ee",
+      "needsInterop": false
+    },
+    "@element-plus/icons-vue": {
+      "src": "../../node_modules/@element-plus/icons-vue/dist/es/index.mjs",
+      "file": "@element-plus_icons-vue.js",
+      "fileHash": "a07e3b50",
+      "needsInterop": false
+    },
+    "@ckeditor/ckeditor5-vue": {
+      "src": "../../node_modules/@ckeditor/ckeditor5-vue/dist/ckeditor.js",
+      "file": "@ckeditor_ckeditor5-vue.js",
+      "fileHash": "aa6563d8",
+      "needsInterop": true
+    },
+    "@ckeditor/ckeditor5-build-classic": {
+      "src": "../../node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js",
+      "file": "@ckeditor_ckeditor5-build-classic.js",
+      "fileHash": "402f6ab9",
+      "needsInterop": true
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "648382ef",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-DVRNAD6U": {
+      "file": "chunk-DVRNAD6U.js"
+    },
+    "chunk-4X3S5RGL": {
+      "file": "chunk-4X3S5RGL.js"
+    },
+    "chunk-6YEIOF3D": {
+      "file": "chunk-6YEIOF3D.js"
+    },
+    "chunk-SMCR75YD": {
+      "file": "chunk-SMCR75YD.js"
+    },
+    "chunk-IGMYUX52": {
+      "file": "chunk-IGMYUX52.js"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+type Country {
+    id: String!
+    value: String!
+}
+
+type Genre {
+    id: Int!
+    title: String!
+}
+
+type Status {
+    id: Int!
+    status_name: String!
+    order: Int!
+}
+
+type Query {
+    countries: [Country]! @all
+    genres: [Genre]! @all @orderBy(column: "title", direction: ASC)
+    statuses: [Status]! @all
+}
+
+type Mutation {
+    createGenre(title: String): Genre! @create
+}

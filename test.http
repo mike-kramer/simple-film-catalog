@@ -1,0 +1,31 @@
+###
+POST http://localhost:24000/graphql
+Accept: application/json
+Content-Type: application/graphql
+
+{
+    countries {
+        id
+        value
+    }
+    genres {
+        id
+        title
+    }
+    statuses {
+        id
+        status_name
+    }
+}
+
+###
+POST http://localhost:24000/graphql
+Accept: application/json
+Content-Type: application/graphql
+
+mutation {
+    createGenre(title: "аниме") {
+        id
+        title
+    }
+}
