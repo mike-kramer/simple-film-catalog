@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string("country_id", 6);
             $table->text("description");
             $table->foreignId("status_id")->constrained();
+            $table->string("type", 20)->index();
             $table->timestamps();
         });
 

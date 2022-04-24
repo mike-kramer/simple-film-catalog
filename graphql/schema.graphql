@@ -14,12 +14,45 @@ type Status {
     order: Int!
 }
 
+type Film {
+    id: Int!
+    title: String!
+    year: Int!
+    rate: Int!
+    cover: String
+    source: String
+    torrent_file: String
+    country_id: String!
+    description: String!
+    status_id: Int!
+    type: String!
+    created_at: String
+    updated_at: String
+    genres: [Genre]! @belongsToMany
+}
+
+type Season {
+    id: Int!
+    film_id: Int!
+    number: Int!
+    type: String!
+    total_episodes: Int!
+    total_episodes_now: Int!
+    start_date: String!
+    created_at: String
+    updated_at: String
+}
+
 type Query {
     countries: [Country]! @all
     genres: [Genre]! @all @orderBy(column: "title", direction: ASC)
     statuses: [Status]! @all
+    film(id: Int! @eq): Film @find
+    seasons(film_id: Int! @eq): [Season] @all
 }
 
 type Mutation {
     createGenre(title: String): Genre! @create
+    createSeason(film_id: Int!, number: Int!, type: String!, total_episodes: Int!, total_episodes_now: Int!, start_date: String!): Season @validate @create
+    updateSeason(id: Int!, film_id: Int!, number: Int!, type: String!, total_episodes: Int!, total_episodes_now: Int!, start_date: String!): Season @validate @update
 }

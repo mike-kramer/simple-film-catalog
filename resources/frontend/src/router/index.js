@@ -12,11 +12,16 @@ const routes = [
         component: HomeView,
     },
     {
-        path: "/internal",
+        path: "/",
         component: InternalView,
         children: [
             {
-                path: "create",
+                path: "film/create",
+                component: EditFilm,
+                meta: {needAuth: true}
+            },
+            {
+                path: "film/edit/:id",
                 component: EditFilm,
                 meta: {needAuth: true}
             }

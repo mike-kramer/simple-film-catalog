@@ -29,3 +29,40 @@ mutation {
         title
     }
 }
+
+###
+POST http://localhost:24000/graphql
+Accept: application/json
+Content-Type: application/graphql
+
+{
+    film(id: 1) {
+        id
+        title
+        year
+        rate
+        cover
+        source
+        torrent_file
+        country_id
+        description
+        status_id
+        type
+        created_at
+        updated_at
+        genres {
+            id
+            title
+        }
+    }
+}
+###
+POST http://localhost:24000/graphql
+Accept: application/json
+Content-Type: application/graphql
+
+{
+ seasons(film_id: 4) {
+                id film_id number type total_episodes total_episodes_now start_date
+            }
+}

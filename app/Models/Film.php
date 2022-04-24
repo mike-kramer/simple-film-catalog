@@ -38,10 +38,16 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Genre[] $genres
  * @property-read int|null $genres_count
  * @method static \Illuminate\Database\Eloquent\Builder|Film whereDescription($value)
+ * @property string $type
+ * @method static \Illuminate\Database\Eloquent\Builder|Film whereType($value)
  */
 class Film extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        "title", "year", "rate", "source", "country_id", "status_id", "description", "type"
+    ];
 
     public function genres(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
