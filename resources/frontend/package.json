@@ -4,15 +4,21 @@
   "scripts": {
     "dev": "vite --port 3500",
     "build": "vite build",
-    "preview": "vite preview --port 5050"
+    "preview": "vite preview --port 5050",
+    "clean": "node scripts/clean.js",
+    "copy-dist": "copyfiles -a -u 2 \"./dist/front/**/*\" ./../../public",
+    "rename-index": "rname  ../../public/index.html index.html.template",
+    "build-prod": "npm run clean && npm run build && npm run copy-dist && npm run rename-index"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^34.0.0",
     "@ckeditor/ckeditor5-vue": "^4.0.0",
     "@element-plus/icons-vue": "^1.1.4",
     "axios": "^0.26.1",
+    "copyfiles": "^2.4.1",
     "element-plus": "^2.1.8",
     "pinia": "^2.0.13",
+    "rname": "^0.0.1-security",
     "sass": "^1.50.0",
     "sass-loader": "^12.6.0",
     "vue": "^3.2.31",
