@@ -12,7 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
+    if (file_exists(public_path("index.html.template"))) {
+        return file_get_contents("index.html.template");
+    }
     return view('welcome');
 });
