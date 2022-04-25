@@ -6,7 +6,7 @@
     "build": "vite build",
     "preview": "vite preview --port 5050",
     "clean": "node scripts/clean.js",
-    "copy-dist": "copyfiles -a -u 2 \"./dist/front/**/*\" ./../../public",
+    "copy-dist": "copyfiles -a -u 1 \"./dist/**/*\" ./../../public",
     "rename-index": "rname  ../../public/index.html index.html.template",
     "build-prod": "npm run clean && npm run build && npm run copy-dist && npm run rename-index"
   },

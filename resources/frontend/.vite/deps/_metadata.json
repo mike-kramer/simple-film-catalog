@@ -1,62 +1,62 @@
 {
-  "hash": "534108ee",
-  "browserHash": "73790cbe",
+  "hash": "3d5370f2",
+  "browserHash": "c0c97f9d",
   "optimized": {
-    "vue-router": {
-      "src": "../../node_modules/vue-router/dist/vue-router.esm-bundler.js",
-      "file": "vue-router.js",
-      "fileHash": "de198b29",
+    "@ckeditor/ckeditor5-build-classic": {
+      "src": "../../node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js",
+      "file": "@ckeditor_ckeditor5-build-classic.js",
+      "fileHash": "489e019f",
+      "needsInterop": true
+    },
+    "@ckeditor/ckeditor5-vue": {
+      "src": "../../node_modules/@ckeditor/ckeditor5-vue/dist/ckeditor.js",
+      "file": "@ckeditor_ckeditor5-vue.js",
+      "fileHash": "ae51a9b4",
+      "needsInterop": true
+    },
+    "@element-plus/icons-vue": {
+      "src": "../../node_modules/@element-plus/icons-vue/dist/es/index.mjs",
+      "file": "@element-plus_icons-vue.js",
+      "fileHash": "7c45ff23",
       "needsInterop": false
     },
-    "vue": {
-      "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
-      "file": "vue.js",
-      "fileHash": "8bdf35e8",
-      "needsInterop": false
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "7d2d3025",
+      "needsInterop": true
     },
     "element-plus": {
       "src": "../../node_modules/element-plus/es/index.mjs",
       "file": "element-plus.js",
-      "fileHash": "59dee60c",
+      "fileHash": "c63b8073",
       "needsInterop": false
     },
     "pinia": {
       "src": "../../node_modules/pinia/dist/pinia.esm-browser.js",
       "file": "pinia.js",
-      "fileHash": "458fc9ee",
+      "fileHash": "b6e0de35",
       "needsInterop": false
     },
-    "@element-plus/icons-vue": {
-      "src": "../../node_modules/@element-plus/icons-vue/dist/es/index.mjs",
-      "file": "@element-plus_icons-vue.js",
-      "fileHash": "a07e3b50",
+    "vue": {
+      "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "582759d3",
       "needsInterop": false
     },
-    "@ckeditor/ckeditor5-vue": {
-      "src": "../../node_modules/@ckeditor/ckeditor5-vue/dist/ckeditor.js",
-      "file": "@ckeditor_ckeditor5-vue.js",
-      "fileHash": "aa6563d8",
-      "needsInterop": true
-    },
-    "@ckeditor/ckeditor5-build-classic": {
-      "src": "../../node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js",
-      "file": "@ckeditor_ckeditor5-build-classic.js",
-      "fileHash": "402f6ab9",
-      "needsInterop": true
-    },
-    "axios": {
-      "src": "../../node_modules/axios/index.js",
-      "file": "axios.js",
-      "fileHash": "648382ef",
-      "needsInterop": true
+    "vue-router": {
+      "src": "../../node_modules/vue-router/dist/vue-router.esm-bundler.js",
+      "file": "vue-router.js",
+      "fileHash": "f37c8cf6",
+      "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-DVRNAD6U": {
-      "file": "chunk-DVRNAD6U.js"
-    },
     "chunk-4X3S5RGL": {
       "file": "chunk-4X3S5RGL.js"
+    },
+    "chunk-DVRNAD6U": {
+      "file": "chunk-DVRNAD6U.js"
     },
     "chunk-6YEIOF3D": {
       "file": "chunk-6YEIOF3D.js"
